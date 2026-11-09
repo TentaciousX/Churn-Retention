@@ -1,0 +1,52 @@
+{
+  "n_records": 7032,
+  "churn_base_rate": 0.2658,
+  "cv_folds": 5,
+  "benchmark": {
+    "logistic_regression": {
+      "roc_auc_mean": 0.845,
+      "roc_auc_std": 0.0026
+    },
+    "random_forest": {
+      "roc_auc_mean": 0.8473,
+      "roc_auc_std": 0.0037
+    }
+  },
+  "calibration": {
+    "brier_raw_rf": 0.1548,
+    "brier_isotonic": 0.1347,
+    "roc_auc_isotonic_oof": 0.8461
+  },
+  "retention": {
+    "target_share": 0.2,
+    "net_saved_probability_ranking": 402381.51,
+    "net_saved_expected_value_ranking": 438549.97,
+    "uplift_pct": 8.99
+  },
+  "retention_sensitivity": [
+    {
+      "target_share": 0.1,
+      "net_saved_probability_ranking": 246510.87,
+      "net_saved_expected_value_ranking": 259265.18,
+      "uplift_pct": 5.17
+    },
+    {
+      "target_share": 0.2,
+      "net_saved_probability_ranking": 402381.51,
+      "net_saved_expected_value_ranking": 438549.97,
+      "uplift_pct": 8.99
+    },
+    {
+      "target_share": 0.3,
+      "net_saved_probability_ranking": 514938.3,
+      "net_saved_expected_value_ranking": 535793.36,
+      "uplift_pct": 4.05
+    },
+    {
+      "target_share": 0.4,
+      "net_saved_probability_ranking": 578508.23,
+      "net_saved_expected_value_ranking": 607793.51,
+      "uplift_pct": 5.06
+    }
+  ]
+}
